@@ -24,6 +24,7 @@ const _getCharacterObject = (character) => {
   const yesDescr = `${character.description.slice(0, 150)}...`;
 
   return {
+    id: character.id,
     name: character.name,
     description: !character.description ? noDescr : yesDescr,
     thumbnail: character.thumbnail.path + "." + character.thumbnail.extension,
